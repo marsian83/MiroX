@@ -38,7 +38,7 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "spandanbarv-mirox-37"
-          entrypoint: "npm:vite"
-          root: "packages/client"
+          entrypoint: "jsr:@std/http@1.0.0-rc.5/file-server"
+          root: "./packages/client"
           
           
