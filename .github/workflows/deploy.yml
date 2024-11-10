@@ -32,7 +32,7 @@ jobs:
         run: "deno i && cd packages/client && deno i"
 
       - name: Build step
-        run: "cd packages/client && deno task build"
+        run: "cd packages/client && deno task dev"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
