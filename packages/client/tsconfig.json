@@ -6,6 +6,9 @@
     "noEmit": true,
     "allowJs": true,
     "checkJs": true,
+    "strict": false,
+    "allowImportingTsExtensions": false,
+    "allowArbitraryExtensions": true,
 
     /* Preact Config */
     "jsx": "react-jsx",
@@ -13,7 +16,8 @@
     "skipLibCheck": true,
     "paths": {
       "react": ["./node_modules/preact/compat/"],
-      "react-dom": ["./node_modules/preact/compat/"]
+      "react-dom": ["./node_modules/preact/compat/"],
+      "privy": ["@privy-io/react-auth"]
     }
   },
   "include": ["node_modules/vite/client.d.ts", "**/*"]
